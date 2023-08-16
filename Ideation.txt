@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Humanity Services</title>
+    <style>
+        /* Reset default margin and padding */
+        body, h1, h2, h3, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #555;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-image: url('hero-image.jpg');
+            background-size: cover;
+            color: #fff;
+            text-align: center;
+            padding: 150px 0;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        /* About Section */
+        .about {
+            background-color: #f7f7f7;
+            padding: 80px 0;
+        }
+
+        .about h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .service {
+            margin-bottom: 40px;
+        }
+
+        .service h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        /* Contact Section */
+        .contact {
+            background-color: #333;
+            color: #fff;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .contact h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .contact p {
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+
+        .contact button {
+            background-color: #555;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        /* Image Display */
+        .image-container {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>LJ COLLABORATORS</h1>
+        <p>!Feed the need!</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <div class="hero">
+        <h1>Empowering Humanity Through Services</h1>
+    </div>
+
+    <div class="about">
+        <h2>Understand Us:</h2>
+        <p>Welcome to LJ COLLABORATORS!! 
+ According to article published by United Nations, it quotes "Losing 25,000 to Hunger Every Day" .
+Breaking the cycle of hunger is not only a idea but a concern.
+
+We -Approaching restaurants for unsold prepared food & 
+   -Approaching supermarkets for imperfect/unsold food supplies(fruits, veggies</p>
+    </div>
+
+    <div class="services">
+        <h2>Our Services</h2>
+        <div class="service">
+            <h3>Food Rescue</h3>
+            <p>Helping to reduce food waste and feed the homeless.</p>
+        </div>
+        <div class="service">
+            <h3>Come Be Part Of It</h3>
+            <p>We Welcome to be free volunteer.
+	       We Welcome to provide excess food.
+	       We Welcome to provide funds.</p>
+        </div>
+        <div class="service">
+            <h3>Community Outreach</h3>
+            <p>Bringing positive change to communities in need.</p>
+        </div>
+    </div>
+
+    <div class="contact">
+        <h2>Contact Us</h2>
+        <p>We'd love to hear from you! Get in touch to learn more about our services and initiatives.</p>
+        <button>Contact Now</button>
+    </div>
+
+    <div class="image-container">
+        <h2>Insert Your Image</h2>
+        <input type="file" accept="image/*" onchange="displayImage(event)">
+        <img id="uploaded-image">
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Humanity Services. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function displayImage(event) {
+            const image = document.getElementById('uploaded-image');
+            image.src = URL.createObjectURL(event.target.files[0]);
+        }
+    </script>
+</body>
+</html>
